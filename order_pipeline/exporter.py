@@ -6,17 +6,8 @@ class DataExporter:
     """Exports cleaned data to a JSON file."""
 
     def export_data(self, data: List[Dict[str, Any]], analysis: Dict[str, Any], filepath: str):
-        """
-        Writes the cleaned data and analysis to a JSON file.
-        The final file will be a dictionary containing:
-        - "analysis_summary": The analysis results.
-        - "cleaned_data": The list of cleaned order records.
-
-        Args:
-            data: The list of cleaned order records.
-            analysis: The analysis summary dictionary.
-            filepath: The destination file path.
-        """
+        """Writes the cleaned data and analysis to a JSON file."""
+        
         if not filepath.endswith('.json'):
             raise ValueError("Export file must be a .json file.")
 

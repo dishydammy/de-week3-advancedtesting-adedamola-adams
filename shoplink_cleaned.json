@@ -1,10 +1,10 @@
 {
     "analysis_summary": {
-        "total_revenue": 6076.48,
-        "average_revenue": 1012.75,
-        "total_orders": 6,
+        "total_revenue": 6044.48,
+        "average_revenue": 1208.896,
+        "total_orders": 5,
         "status_counts": {
-            "paid": 4,
+            "paid": 3,
             "pending": 1,
             "refunded": 1
         }
@@ -26,15 +26,6 @@
             "quantity": 1.0,
             "price": 12.5,
             "total": 12.5,
-            "payment_status": "paid"
-        },
-        {
-            "order_id": "ORD004",
-            "timestamp": "2025-10-19T08:15:00+00:00",
-            "item": "Wireless mouse",
-            "quantity": 2.0,
-            "price": 16.0,
-            "total": 32.0,
             "payment_status": "paid"
         },
         {
