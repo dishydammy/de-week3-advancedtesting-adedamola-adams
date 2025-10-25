@@ -21,7 +21,7 @@ class TestCalculator:
     def test_add_floats(self, calculator):
         """Test addition of floating point numbers."""
         result = calculator.add(2.5, 3.7)
-        assert pytest.approx(result, 0.01) == 6.2
+        assert result == pytest.approx(6.2, abs=0.01)
 
     def test_subtract_positive_numbers(self, calculator):
         """Test subtraction of positive numbers."""
@@ -55,7 +55,7 @@ class TestCalculator:
     def test_divide_with_remainder(self, calculator):
         """Test division with remainder."""
         result = calculator.divide(10, 3)
-        assert pytest.approx(result, 0.01) == 3.33
+        assert result == pytest.approx(3.33, abs=0.01)
 
     def test_divide_by_zero_raises_error(self, calculator):
         """Test that division by zero raises ValueError."""
@@ -76,7 +76,7 @@ class TestCalculator:
         """Test raising to negative power."""
         assert calculator.power(2, -1) == 0.5
         result = calculator.power(4, -2)
-        assert pytest.approx(result, 0.01) == 0.0625
+        assert result == pytest.approx(0.0625, abs=0.01)
 
     def test_square_root_positive_number(self, calculator):
         """Test square root of positive numbers."""
